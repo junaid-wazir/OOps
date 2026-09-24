@@ -3,4 +3,5 @@ class student :
         print(f"{name} is studying.")
 
 student1 = student()
-student1.study("sahil khan wazir")
+name = input("Enter the name of the student: ")
+student1.study(name)
