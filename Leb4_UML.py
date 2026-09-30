@@ -11,10 +11,10 @@ class Robot2:
         self.name = name
         self.model = model
 
-    def greet2(self):
+    def __str__(self):
         return f"Hello, I am {self.name}, model {self.model}."
 
 robo=Robot("RoboX", "Red")
 robo.greet()
 robo2=Robot2("RoboY", "X200")
-robo2.greet2()
+print(robo2)
