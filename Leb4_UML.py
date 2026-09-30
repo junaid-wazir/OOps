@@ -1,11 +1,9 @@
 class Robot:
-    # def __init__(self, name1, color1):#signature of the function
-    #     self.name = name1
-    #     self.color = color1
-
-
     def __init__(self, name, color):
-        print(f"Robot initialized: {self.name}, Color: {self.color}")
+        self.name = name
+        self.color = color
+    def greet(self):
+        return f"Hello, I am {self.name}, model {self.color}."
 
-robot=Robot()
-#rob1 = Robot("Robo1", "Red")
+robo=Robot("RoboX", "Red")
+robo.greet()
