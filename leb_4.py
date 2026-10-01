@@ -1,4 +1,4 @@
-class date:
+"""class date:
     def __init__(self, year, month, day):
         self.year = year
         self.month = month
@@ -20,4 +20,38 @@ d2=date(2023, 6, 10)
 p1=product("Laptop", 1200, d1)
 p2=product("Smartphone", 800, d2)
 print(p1)
-print(p2)
+print(p2) """
+
+"""
+Create an Item class with the variables for the item name, item quantity and item price
+and tax rate. The objects should be initialized through constructor. Use a str method in
+the class to print each object in a consistent format. Use methods/functions to calculate
+the tax and price.
+"""
+
+# initializing object whith default values
+from operator import gt
+
+
+class student :
+    def __init__(self,name ,student_id, age=0,gread ="Not Specified"):
+        self.name = name #required parameter
+        self.student_id = student_id #required parameter
+        self.age = age#optional parameter with default value
+        self.gread = gread#optional parameter with default value
+
+s1=student("aurag", 12345,)
+print(s1.name)
+print(s1.student_id)
+print(s1.age)
+print(s1.gread)
+s2=student("John", 67890, 20,)
+print(s2.name)
+print(s2.student_id)
+print(s2.age)
+print(s2.gread)
+s3=student("Alice", 54321, gread="A")
+print(s3.name)
+print(s3.student_id)
+print(s3.age)
+print(s3.gread)
