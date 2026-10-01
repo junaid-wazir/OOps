@@ -39,18 +39,20 @@ class student :
         self.student_id = student_id #required parameter
         self.age = age#optional parameter with default value
         self.gread = gread#optional parameter with default value
+    def __str__(self):
+        return f"Name: {self.name}, Student ID: {self.student_id}, Age: {self.age}, Gread: {self.gread}"
 
-s1=student("aurag", 12345,)
+s1 = student("John", "S12345", 20, "A")
+s2 = student("Alice", "S67890", 19)
+s3 = student("Bob", "S54321",gread="B")
 print(s1.name)
 print(s1.student_id)
 print(s1.age)
 print(s1.gread)
-s2=student("John", 67890, 20,)
 print(s2.name)
 print(s2.student_id)
 print(s2.age)
 print(s2.gread)
-s3=student("Alice", 54321, gread="A")
 print(s3.name)
 print(s3.student_id)
 print(s3.age)
