@@ -25,7 +25,7 @@ def read_employee(n):
 emp1=read_employee(1)
 emp2=read_employee(2)
 
-print("\n--- Employee 1 Details ---")
+print("\n--- Employee1 Details ---")
 print(emp1)
-print("\n--- Employee 2 Details ---")
+print("\n--- Employee2 Details ---")
 print(emp2)

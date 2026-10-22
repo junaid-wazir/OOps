@@ -1,4 +1,4 @@
-"""
+
 class book:
     def __init__(self, title, author, price):
         self.__title = title
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     new_price = float(input("Enter the new price: "))
     book1.set_price(new_price)
     print("\n--- Updated Book Details ---")
-    print(book1)"""
+    print(book1)
 
 #Doosre sawal ke mutabiq do mobiles ka data, private variables, set/get methods aur price update ka code yeh raha[cite: 1]:
 class mobile:
@@ -112,9 +112,10 @@ class student:
     def __str__(self):
         return f"Registration Number: {self.__reg_no}\nName: {self.__name}\nGPA: {self.__gpa:.2f}"
 
-user1=student(input("Enter registration number: "),
-              input("Enter name: "),
-              float(input("Enter GPA: ")))
+reg=input("Enter registration number: ")
+name=input("Enter name: ")
+gpa=float(input("Enter GPA: "))
+user1=student(reg,name,gpa)
 print(user1)
 
 new_gpa=float(input("Enter new GPA: "))
