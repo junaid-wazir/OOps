@@ -21,6 +21,8 @@ class course:
     def set_card_hours(self, card_hours):
         self.card_hours = card_hours
     def __str__(self):
+        return f"Course Name: {self.name},  Credits house :{self.credits}, Course: {self.course}"
+        
         
 
 # main program
